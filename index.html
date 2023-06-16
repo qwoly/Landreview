@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,13 +7,96 @@
     <link rel="stylesheet" href="style.css">
     <title>Landreview</title>
     <!-- icons -->
-    <link rel="stylesheet"href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=MuseoModerno:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=MuseoModerno:wght@200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
 </head>
-<body>
 
+<body>
+    <!-- header -->
+    <header>
+        <a href="#" class="logo"><i class='bx bx-hive'></i>NFT Store</a>
+
+        <ul class="navlist">
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Store</a></li>
+            <li><a href="#">Contact us</a></li>
+        </ul>
+
+        <div class="h-main">
+            <a href="#" class="h-btn">Buy Now</a>
+            <div class="bx bx-menu" id="menu-icon"></div>
+            <div class="bx bx-moon" id="darkmode"></div>
+        </div>
+    </header>
+    <!-- hero sec -->
+    <section class="hero">
+        <div class="hero-text">
+            <h1>NFT</h1>
+            <h4>NFT serie</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis nostrum sequi earum libero aperiam
+                ullam nam vel reprehenderit cumque accusamus. Quasi incidunt neque sapiente at odit alias? Error, odit
+                in.</p>
+            <div class="hero-in">
+                <div class="box">
+                    <h3 id="btn">Bird</h3>
+                    <img src="img/1.png" alt="">
+                    <h5 class="span" style="max-height: 0;">This FAQ section is now in the expanded state.</h5>
+                </div>
+                <div class="box">
+                    <h3 id="btn">CloneX</h3>
+                    <img src="img/2.png" alt="">
+                    <h5 class="span" style="max-height: 0;">This FAQ section is now in the expanded state, so you
+                        see how it looks. Rhoncus sed facilisi sed amet.</h5>
+                </div>
+                <div class="box">
+                    <h3 id="btn">Arcade</h3>
+                    <img src="img/7.png" alt="">
+                    <h5 class="span" style="max-height: 0;">This FAQ section is now in the expanded state, so you
+                        see how it looks.</h5>
+                </div>
+            </div>
+        </div>
+        <div class="hero-img">
+            <img src="img/6.png" alt="">
+        </div>
+    </section>
+    <!-- arrow -->
+    <div class="down-arrow">
+        <i class='bx bx-down-arrow-alt' ></i>
+    </div>
+<!-- hidden -->
+    <script>
+        let box = document.querySelectorAll('.box');
+
+        box.forEach(el => {
+            let span = el.querySelector('.span');
+            let btn = el.querySelector('#btn');
+
+            el.addEventListener('click', () => {
+                if (span.style.maxHeight === '0px') {
+                    span.style.maxHeight = span.scrollHeight + 'px';
+                    
+                } else {
+                    span.style.maxHeight = '0';
+                   
+                }
+            });
+        });
+    </script>
+
+
+
+
+    
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- js file link -->
+    <script src="js/script.js"></script>
 </body>
+
 </html>
