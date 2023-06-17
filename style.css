@@ -156,7 +156,7 @@ section{
     box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
     transition: all ease .55s;
     cursor: pointer;
-    overflow: hidden;
+    text-align: center;
 }
 .box img{
     max-width: 100%;
